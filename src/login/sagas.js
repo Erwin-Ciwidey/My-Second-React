@@ -23,19 +23,14 @@ import {
   CLIENT_UNSET,
 } from '../client/constants'
 
-import axios from 'axios';
-
 const loginUrl = `http://localhost:8000/api/login`
 
 function loginApi (email, password) {
   
   return fetch(loginUrl, {
     method: 'POST',
-    mode: 'cors',
     headers: {
-      'Content-Type': 'application/json',
-      'Accept': 'application/json',
-      'Origin' : 'http://localhost:3000'
+      'Content-Type': 'application/json'
     },
     body: JSON.stringify({ email, password }),
   })

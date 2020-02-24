@@ -49,6 +49,15 @@ class Signup extends Component {
         {/* Use the Submit handler with our own submit handler*/}
         <form className="widget-form" onSubmit={handleSubmit(this.submit)}>
           <h1>Signup</h1>
+          <label htmlFor="name">Name</label>
+          <Field
+            name="name"
+            type="text"
+            id="name"
+            className="name"
+            label="Name"
+            component="input"
+          />
           <label htmlFor="email">Email</label>
           <Field
             name="email"

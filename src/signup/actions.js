@@ -1,9 +1,10 @@
 import { SIGNUP_REQUESTING } from './constants'
 
-const signupRequest = function signupRequest ({ email, password }) {
+const signupRequest = function signupRequest ({name, email, password }) {
   console.log('called');
   return {
     type: SIGNUP_REQUESTING,
+    name,
     email,
     password,
   }

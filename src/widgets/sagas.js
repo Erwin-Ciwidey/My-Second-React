@@ -12,7 +12,7 @@ import {
   widgetRequestError,
 } from './actions'
 
-const widgetsUrl = `${process.env.REACT_APP_API_URL}/api/Clients`
+const widgetsUrl = `http://localhost:8000/api/user`
 
 // Nice little helper to deal with the response
 // converting it to json, and handling errors
