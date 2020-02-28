@@ -4,24 +4,24 @@ import { take, fork, cancel, call, put, cancelled } from 'redux-saga/effects'
 import { browserHistory } from 'react-router'
 
 // Helper for api errors
-import { handleApiErrors } from '../lib/api-errors'
+import { handleApiErrors } from '../../lib/api-errors'
 
 // Our login constants
 import {
   LOGIN_REQUESTING,
   LOGIN_SUCCESS,
   LOGIN_ERROR,
-} from './constants'
+} from '../constants/LoginConstant'
 
 // So that we can modify our Client piece of state
 import {
   setClient,
   unsetClient,
-} from '../client/actions'
+} from '../actions/ClientAction'
 
 import {
   CLIENT_UNSET,
-} from '../client/constants'
+} from '../constants/ClientConstant'
 
 const loginUrl = `http://localhost:8000/api/login`
 

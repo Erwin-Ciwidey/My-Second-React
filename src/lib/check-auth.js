@@ -1,4 +1,4 @@
-import { setClient } from '../client/actions'
+import { setClient } from '../redux/actions/ClientAction'
 
 function checkAuthorization (dispatch) {
   // attempt to grab the token from localstorage

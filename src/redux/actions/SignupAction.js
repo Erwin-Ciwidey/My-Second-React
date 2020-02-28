@@ -1,4 +1,4 @@
-import { SIGNUP_REQUESTING } from './constants'
+import { SIGNUP_REQUESTING } from '../constants/SignupConstant'
 
 const signupRequest = function signupRequest ({name, email, password }) {
   console.log('called');

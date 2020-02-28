@@ -7,7 +7,7 @@ import Messages from '../notifications/Messages'
 import Errors from '../notifications/Errors'
 
 // include our widgetRequest action
-import { widgetCreate, widgetRequest } from './actions'
+import { widgetCreate, widgetRequest } from '../redux/actions/WidgetAction'
 
 // Our validation function for `name` field.
 const nameRequired = value => (value ? undefined : 'Name Required')

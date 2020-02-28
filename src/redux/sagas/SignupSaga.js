@@ -1,10 +1,10 @@
 import { call, put, takeLatest } from 'redux-saga/effects'
-import { handleApiErrors } from '../lib/api-errors'
+import { handleApiErrors } from '../../lib/api-errors'
 import {
   SIGNUP_REQUESTING,
   SIGNUP_SUCCESS,
   SIGNUP_ERROR,
-} from './constants'
+} from '../constants/SignupConstant'
 
 // The url derived from our .env file
 const signupUrl = `http://localhost:8000/api/register`

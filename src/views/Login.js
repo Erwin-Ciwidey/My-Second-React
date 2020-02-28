@@ -7,7 +7,7 @@ import { Link } from 'react-router'
 import Messages from '../notifications/Messages'
 import Errors from '../notifications/Errors'
 
-import loginRequest from './actions'
+import loginRequest from '../redux/actions/LoginAction'
 
 // If you were testing, you'd want to export this component
 // so that you can test your custom made component and not

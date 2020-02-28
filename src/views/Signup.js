@@ -7,7 +7,7 @@ import { Link } from 'react-router'
 import Messages from '../notifications/Messages'
 import Errors from '../notifications/Errors'
 
-import signupRequest from './actions'
+import signupRequest from '../redux/actions/SignupAction'
 
 class Signup extends Component {
   // Pass the correct proptypes in for validation

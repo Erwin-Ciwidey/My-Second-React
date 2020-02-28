@@ -2,6 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import logo from './logo.svg'
 import './App.css'
+import 'bootstrap/dist/css/bootstrap.css';
+
 
 const App = props => (
   <div className="App">

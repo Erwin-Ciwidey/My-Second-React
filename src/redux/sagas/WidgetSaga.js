@@ -1,16 +1,16 @@
 import { call, put, takeLatest } from 'redux-saga/effects'
-import { handleApiErrors } from '../lib/api-errors'
+import { handleApiErrors } from '../../lib/api-errors'
 import {
   WIDGET_CREATING,
   WIDGET_REQUESTING,
-} from './constants'
+} from '../constants/WidgetConstant'
 
 import {
   widgetCreateSuccess,
   widgetCreateError,
   widgetRequestSuccess,
   widgetRequestError,
-} from './actions'
+} from '../actions/WidgetAction'
 
 const widgetsUrl = `http://localhost:8000/api/user`
 

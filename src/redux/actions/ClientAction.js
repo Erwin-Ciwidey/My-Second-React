@@ -1,4 +1,4 @@
-import { CLIENT_SET, CLIENT_UNSET } from './constants'
+import { CLIENT_SET, CLIENT_UNSET } from '../constants/ClientConstant'
 
 // there's literally no reason these are in a different
 // format from the other component actions other than

@@ -12,9 +12,9 @@ import {
 
 // Import all of our components
 import App from './App'
-import Login from './login'
-import Signup from './signup'
-import Widgets from './widgets'
+import Login from './views/Login'
+import Signup from './views/Signup'
+import Widgets from './views/Widget'
 import './index.css'
 
 // Import the index reducer and sagas
