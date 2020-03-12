@@ -5,6 +5,7 @@ import './App.css'
 import 'bootstrap/dist/css/bootstrap.css';
 
 
+
 const App = props => (
   <div className="App">
     <div className="App-header">
@@ -12,7 +13,7 @@ const App = props => (
       <h2>Welcome to Widget Reactory</h2>
     </div>
     <section className="App-body">
-      {props.children}
+         {props.children}
     </section>
   </div>
 )

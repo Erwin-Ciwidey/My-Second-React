@@ -49,7 +49,7 @@ sagaMiddleware.run(IndexSagas)
 ReactDOM.render(
   <Provider store={store}>
     <Router history={browserHistory}>
-      <Route path="/" component={App} >
+      <Route exact path="/" component={App} >
         <IndexRoute onEnter={checkIndexAuthorization(store)} />
         <Route path="/login" component={Login} />
         <Route path="/signup" component={Signup} />
@@ -58,4 +58,4 @@ ReactDOM.render(
     </Router>
   </Provider>,
   document.getElementById('root'),
-)
+);

@@ -58,6 +58,7 @@ function* widgetCreateFlow (action) {
 }
 
 function widgetRequestApi (client) {
+  console.log(client);
   const url = `${widgetsUrl}/${client.id}/widgets`
   const request = fetch(url, {
     method: 'GET',
